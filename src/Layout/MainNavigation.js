@@ -5,18 +5,20 @@ import classes from './MainNavigation.module.css';
 import FavoritesContext from '../store/favorites-context';
 
 
+
+
 function MainNavigation() {
     const favoriteCtx = useContext(FavoritesContext);
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>React Meetups</div>
+            <div className={classes.logo}>KNUCKLES</div>
             <nav>
                 <ul>
                     <li>
-                        <Link to='/'>All Meetups</Link>
+                        <Link to='/'>All Session</Link>
                     </li>
                     <li>
-                        <Link to='/new-meetup'>Add New Meetups</Link>
+                        <Link to='/new-meetup'>Book New Session</Link>
                     </li>
                     <li>
                         <Link to='/favorites'>
